@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Propiedades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Gestión de Propiedades</h1>
+        
+        <!-- Formulario para agregar/editar propiedades -->
+        <div class="form-section">
+            <h2 id="form-title">Agregar Nueva Propiedad</h2>
+            <form id="property-form">
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" name="price" step="0.01" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="size">Tamaño (m²):</label>
+                    <input type="number" id="size" name="size" step="0.01" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn">Agregar Propiedad</button>
+                <button type="button" id="cancel-btn" style="display: none;">Cancelar</button>
+            </form>
+        </div>
+        
+        <!-- Lista de propiedades -->
+        <div class="properties-section">
+            <h2>Lista de Propiedades</h2>
+            <div id="loading">Cargando propiedades...</div>
+            <table id="properties-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Dirección</th>
+                        <th>Precio</th>
+                        <th>Tamaño (m²)</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="properties-list">
+                    <!-- Aquí se cargarán las propiedades dinámicamente -->
+                </tbody>
+            </table>
+            <div id="no-properties" style="display: none;">
+                <p>No hay propiedades registradas.</p>
+            </div>
+        </div>
+        
+        <!-- Mensajes de estado -->
+        <div id="message" class="message" style="display: none;"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

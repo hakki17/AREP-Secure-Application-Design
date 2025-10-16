@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: Manage-Properties
+    restart: always
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://54.225.47.98:3306/property_management?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: farruko67R%&?
+    ports:
+      - "8080:8080"
