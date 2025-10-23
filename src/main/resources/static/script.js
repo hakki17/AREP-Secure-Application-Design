@@ -1,4 +1,4 @@
-const API_URL = 'http://3.82.46.79:8080/api/properties';
+const API_URL = 'http://3.89.249.41:8080/api/properties';
 let editingId = null;
 
 // Cargar propiedades cuando se carga la página

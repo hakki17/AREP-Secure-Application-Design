@@ -1,4 +1,4 @@
-const API_URL = 'http://54.167.29.234:8080/api/auth';
+const API_URL = 'http://3.89.249.41:8080/api/auth';
 
 function showTab(tab) {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
