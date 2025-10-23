@@ -66,7 +66,7 @@ AREP-Secure-Application-Design/
 
 La infraestructura está desplegada en Amazon Web Services (AWS) utilizando una Virtual Private Cloud (VPC) personalizada que proporciona un entorno de red aislado y seguro. La arquitectura de red implementa las mejores prácticas de AWS, incluyendo el uso de subnets públicas, Internet Gateway para conectividad externa, y Security Groups como firewalls virtuales.
 
-![](https://github.com/hakki17/AREP-Secure-Application-Design/blob/main/img/arquitectura.jpg)
+![](https://github.com/hakki17/AREP-Secure-Application-Design/blob/main/img/arquitectura.png)
 
 ## Flujo de Comunicación
 
@@ -78,9 +78,9 @@ El sistema implementa una arquitectura de tres capas distribuida en la nube de A
 - Servidor Apache (EC2 Instance)
 - Servidor Spring Boot (EC2 Instance)
 
-![](https://github.com/hakki17/AREP-Secure-Application-Design/blob/main/img/ec21.jpg)
+![](https://github.com/hakki17/AREP-Secure-Application-Design/blob/main/img/ec21.png)
 
-![](https://github.com/hakki17/AREP-Secure-Application-Design/blob/main/img/ec22.jpg)
+![](https://github.com/hakki17/AREP-Secure-Application-Design/blob/main/img/ec22.png)
 
 ## Componentes del Backend
 
